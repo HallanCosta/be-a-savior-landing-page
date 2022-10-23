@@ -21,10 +21,14 @@ function App() {
 
         <ul>
           <li>
-            <a href="https://github.com/HallanCosta">Hállan</a>
+            <a href="https://github.com/HallanCosta" target="_blank">
+              Hállan
+            </a>
           </li>
           <li>
-            <a href="https://github.com/HallexCosta">Hállex</a>
+            <a href="https://github.com/HallexCosta" target="_blank">
+              Hállex
+            </a>
           </li>
         </ul>
       </header>

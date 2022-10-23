@@ -10,7 +10,9 @@
     vertical-align: middle;
 
     .logo {
-
+      img {
+        width: 75px;
+      }
     }
 
     .github {
@@ -87,11 +89,15 @@
 
         border-radius: 20px;
         
-        background-image: linear-gradient(to right, #2b56db, #15349b, #0a1577);
-        color: #0035E0;
+        background-image: linear-gradient(to right, #3157cd, #15349b, #0a1577);
+        color: #003cff;
         filter: drop-shadow(10px 10px 110px);
 
-        transition: background-color 300ms ease-in-out;
+        transition: outline 300ms ease-in-out, background-image 400ms ease;
+
+        &:hover {
+          filter: drop-shadow(10px 10px 110px);
+        }
 
         &::before {
           content: 'Baixar App';
@@ -99,14 +105,11 @@
           left: 0%;
           top: 0;
 
+          outline: 0;
           padding: 30px 66px;
           font-weight: 600;
           font-size: 28px;
           color: #fff;
-        }
-
-        &:hover {
-
         }
       }
     }
