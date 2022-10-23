@@ -1,0 +1,114 @@
+.be-a-savior {
+  background-color: #21212E;
+  padding-top: 20px;
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1450px;
+    margin: 0 auto;
+    vertical-align: middle;
+
+    .logo {
+
+    }
+
+    .github {
+      display: inline-block;
+      margin: auto;
+      font-weight: 500;
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 36px;
+
+      li {
+        display: inline-block;
+        vertical-align: middle;
+
+        a {
+          cursor: pointer;
+          background-color: transparent;
+          transition: background-color 300ms ease-in-out, color 300ms ease;
+          border-radius: 20px;
+          padding: 20px;
+          outline: 1px solid #ffffff;
+          font-weight: 500;
+          
+          &:hover {
+            background-color: #ffffff;
+            color: #21212E;
+          }
+        }
+      }
+    }
+  }
+  
+  .container {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding-top: 121px;
+    padding-bottom: 121px;
+    width: 100%;
+
+    .column {
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+
+      h1 {
+        font-weight: 600;
+        font-size: 50px;
+      }
+
+      p {
+        max-width: 596px;
+        margin-top: 38px;
+        margin-bottom: 82px;
+        line-height: 28px;
+        font-weight: 16px;
+      }
+
+      a {
+        position: relative;
+        padding: 30px 66px;
+        font-weight: 600;
+        font-size: 28px;
+        color: #FFFFFF;
+
+        border-radius: 20px;
+        
+        background-image: linear-gradient(to right, #2b56db, #15349b, #0a1577);
+        color: #0035E0;
+        filter: drop-shadow(10px 10px 110px);
+
+        transition: background-color 300ms ease-in-out;
+
+        &::before {
+          content: 'Baixar App';
+          position: absolute;
+          left: 0%;
+          top: 0;
+
+          padding: 30px 66px;
+          font-weight: 600;
+          font-size: 28px;
+          color: #fff;
+        }
+
+        &:hover {
+
+        }
+      }
+    }
+  }
+}
