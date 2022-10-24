@@ -42,7 +42,7 @@ function App() {
             alguma forma.
           </p>
 
-          <a href="#" download>
+          <a href="https://exp-shell-app-assets.s3.us-west-1.amazonaws.com/android/%40hallancosta/be-a-savior-c8507d9f287041a6a39b4a9035d81f1c-signed.apk" download>
             Baixar App
           </a>
         </div>
