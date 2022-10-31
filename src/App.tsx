@@ -21,12 +21,12 @@ function App() {
 
         <ul>
           <li>
-            <a href="https://github.com/HallanCosta" target="_blank">
+            <a href="https://github.com/HallanCosta" target="_blank" rel="noreferrer">
               Hállan
             </a>
           </li>
           <li>
-            <a href="https://github.com/HallexCosta" target="_blank">
+            <a href="https://github.com/HallexCosta" target="_blank" rel="noreferrer">
               Hállex
             </a>
           </li>
