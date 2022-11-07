@@ -1,0 +1,38 @@
+@mixin for-size($size)
+{
+    @if $size == phone-320 {
+        @media (max-width: 320px) { @content; }
+    } @else if $size == phone-360 {
+        @media (max-width: 360px) { @content; }
+    } @else if $size == phonesmallest {
+        @media (max-width: 370px) { @content; }
+    } @else if $size == phone-400 {
+        @media (max-width: 400px) { @content; }
+    } @else if $size == phone-420 {
+        @media (max-width: 420px) { @content; }
+    } @else if $size == phone-450 {
+        @media (max-width: 450px) { @content; }
+    } @else if $size == phonesmall {
+        @media (max-width: 450px) { @content; }
+    } @else if $size == phone-480 {
+        @media (max-width: 480px) { @content; }
+    } @else if $size == phone-top-header {
+        @media (max-width: 500px) { @content; }
+    } @else if $size == phone-550 {
+        @media (max-width: 550px) { @content; }
+    } @else if $size == phone-580 {
+        @media (max-width: 580px) { @content; }
+    } @else if $size == phone {
+        @media (max-width: 600px) { @content; }
+    } @else if $size == phone-720 {
+        @media (max-width: 720px) { @content; }
+    } @else if $size == tablet {
+        @media (max-width: 1000px) { @content; }
+    } @else if $size == desktop-1200 {
+        @media (max-width: 1200px) { @content; }
+    } @else if $size == desktop-1366 {
+        @media (max-width: 1366px) { @content; }
+    } @else if $size == desktop-1480 {
+        @media (max-width: 1480px) { @content; }
+    }
+}

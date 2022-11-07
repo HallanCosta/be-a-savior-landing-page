@@ -1,12 +1,12 @@
 .be-a-savior {
-  background-color: #21212E;
-  padding-top: 20px;
-
+  height: 100%;
+  
   header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 1450px;
+    max-width: 1460px;
     margin: 0 auto;
+    padding-top: 20px;
     vertical-align: middle;
 
     .logo {
@@ -56,7 +56,7 @@
   }
   
   .container {
-    max-width: 1450px;
+    max-width: 1460px;
     margin: 0 auto;
     padding-top: 121px;
     padding-bottom: 121px;
@@ -110,6 +110,138 @@
           font-weight: 600;
           font-size: 28px;
           color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@include for-size(desktop-1480) {
+  .be-a-savior {
+    header {
+      max-width: 1346px;
+    }
+
+    .container {
+      max-width: 1346px;
+    }
+  }
+}
+
+@include for-size(desktop-1366) {
+  .be-a-savior {
+    header {
+      max-width: 1180px;
+    }
+
+    .container {
+      max-width: 1180px;
+    }
+  }
+}
+
+@include for-size(desktop-1200) {
+  .be-a-savior {
+    header {
+      max-width: 980px;
+    }
+
+    .container {
+      max-width: 980px;
+    }
+  }
+}
+
+@include for-size(tablet) {
+  .be-a-savior {
+    header {
+      max-width: 700px;
+      grid-template-columns: 0.3fr 0fr 1fr 1fr;
+    }
+
+    .container {
+      max-width: 700px;
+
+      .column {
+        width: 100%;
+        display: block;
+
+        img {
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+}
+
+@include for-size(phone-720) {
+  .be-a-savior {
+    header {
+      max-width: 580px;
+    }
+
+    .container {
+      max-width: 580px;
+    }
+  }
+}
+
+@include for-size(phone) {
+  .be-a-savior {
+    header {
+      max-width: 400px;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+
+      .invisible {
+        display: none;
+      }
+
+      .logo {
+        margin: auto;
+      }
+
+      .github {
+        margin: auto;
+      }
+
+      ul {
+        margin: auto;
+      }
+    }
+
+    .container {
+      max-width: 400px;
+      text-align: center;
+    }
+  }
+}
+
+@include for-size(phone-420) {
+  .be-a-savior {
+    header {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .column {
+        h1 {
+          font-size: 42px;
+        }
+
+        a {
+          padding: 20px 45px;
+          font-size: 26px;
+          border-radius: 16px;
+
+          &::before {
+            padding: 20px 45px;
+            font-size: 26px;
+          }
         }
       }
     }
